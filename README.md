@@ -32,7 +32,7 @@ cd user-data-generator
 ```
 
 * Replace `10` with any number of users you want to generate.
-* Output is JSON printed to the console.
+* Output is saved as a JSON file at `./`
 
 ## Notes
 
