@@ -7,7 +7,7 @@ function generateAlias(firstName, lastName) {
     () => `${firstName.toLowerCase()}_${lastName.toLowerCase()}`,
     () => `${firstName.toLowerCase()}.${lastName.toLowerCase()}`,
     () => `${lastName.toLowerCase()}${firstName.charAt(0).toLowerCase()}`,
-    () => faker.internet.userName({ firstName, lastName }),
+    () => faker.internet.username({ firstName, lastName }),
   ];
   
   const numAliases = faker.number.int({ min: 1, max: 3 });
@@ -63,7 +63,7 @@ function generateUser() {
     },
     
     // Online Presence
-    username: faker.internet.userName({ firstName, lastName }),
+    username: faker.internet.username({ firstName, lastName }),
     aliases,
     avatar: faker.image.avatar(),
     website: faker.internet.url(),
